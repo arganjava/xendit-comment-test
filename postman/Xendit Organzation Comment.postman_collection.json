@@ -1,0 +1,88 @@
+{
+	"id": "ea1d38eb-4ece-5dfa-5418-78f74dff8c16",
+	"name": "Xendit Organzation Comment",
+	"description": "",
+	"order": [
+		"8477dc67-34a3-bc81-791e-45c9da988a42",
+		"c8d3b927-1780-8f77-811b-0a2f687eb212",
+		"f0bfa07b-73cd-62fa-420c-ed76d3209d9f"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1596794819867,
+	"owner": "3250937",
+	"public": false,
+	"requests": [
+		{
+			"id": "8477dc67-34a3-bc81-791e-45c9da988a42",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://xendit-comment-service.herokuapp.com/comment/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1596893656075,
+			"name": "Comment Add",
+			"description": "",
+			"collectionId": "ea1d38eb-4ece-5dfa-5418-78f74dff8c16",
+			"responses": [],
+			"rawModeData": "{\"organization\": \"arganorgs\", \"message\":\"test\"}"
+		},
+		{
+			"id": "c8d3b927-1780-8f77-811b-0a2f687eb212",
+			"headers": "",
+			"headerData": [],
+			"url": "https://xendit-comment-service.herokuapp.com/comment/{{organizationName}}",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1596893893613,
+			"name": "Comment Get",
+			"description": "",
+			"collectionId": "ea1d38eb-4ece-5dfa-5418-78f74dff8c16",
+			"responses": []
+		},
+		{
+			"id": "f0bfa07b-73cd-62fa-420c-ed76d3209d9f",
+			"headers": "",
+			"headerData": [],
+			"url": "https://xendit-comment-service.herokuapp.com/comment/deleteAllComments/{{organizationName}}",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1596893904356,
+			"name": "Comment Delete All",
+			"description": "",
+			"collectionId": "ea1d38eb-4ece-5dfa-5418-78f74dff8c16",
+			"responses": []
+		}
+	]
+}
