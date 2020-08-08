@@ -36,8 +36,8 @@
 
 ## Test Case Scenarios
 - `Comment Add` When client input add comment then message will response code 200 and body message **{"organization": "organization", "message":"message"}**
-- `Comment Show` When client input add comment then message will response code 200 and body message **[ { "isDeleted": false, "_id": "5f2ea9b079f32f0004114175", "message": "message", "organization": "organization", "createdDate": "2020-08-08T13:33:36.269Z", "__v": 0 },**
-- `Comment Delete All` When client input add comment then message will response code 200 and body message **{ "n": 0, "nModified": 1, "opTime": { "ts": "6858606255343140866", "t": 11 }, "electionId": "electionId", "ok": 1, "operationTime": "operationTime", "$clusterTime": { "clusterTime": "6858606255343140866", "signature": { "hash": "hash", "keyId": "keyId" } } }**
+- `Comment Show` When client input show comment then message will response code 200 and body message **[ { "isDeleted": false, "_id": "5f2ea9b079f32f0004114175", "message": "message", "organization": "organization", "createdDate": "2020-08-08T13:33:36.269Z", "__v": 0 },**
+- `Comment Delete All` When client input comment delete all then message will response code 200 and body message **{ "n": 0, "nModified": 1, "opTime": { "ts": "6858606255343140866", "t": 11 }, "electionId": "electionId", "ok": 1, "operationTime": "operationTime", "$clusterTime": { "clusterTime": "6858606255343140866", "signature": { "hash": "hash", "keyId": "keyId" } } }**
 
 ## Technical Steps
 
